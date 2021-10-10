@@ -37,6 +37,8 @@ const removeFromDb = id => {
 
 const getStoredCart = () => {
   const exists = getDb();
+  // const exists = localStorage.getItem('shopping_cart');
+
   return exists ? JSON.parse(exists) : {};
 }
 
